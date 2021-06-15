@@ -1,5 +1,6 @@
 package com.pachoncito.aspapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,9 +8,13 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CalendarView;
+import android.widget.Toast;
 
 public class CalendarioPrincipal extends AppCompatActivity {
 
+    private CalendarView calendario;
+    private String fecha;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +27,26 @@ public class CalendarioPrincipal extends AppCompatActivity {
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
         //quitar actionbar
         getSupportActionBar().hide();
+
+        calendario = (CalendarView)findViewById(R.id.cvPrincipal);
+
+        calendario.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
+
+                fecha = dayOfMonth + "/" + month + "/" + year;
+                Toast.makeText(CalendarioPrincipal.this, fecha, Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+    }
+
+    public void irActividad (View view){
+
+        Intent irRegistrarActividad = new Intent();
+
+        irRegistrarActividad.putExtra("fechaRegistro", fecha);
 
     }
 
