@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarioPrincipal">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tb_calendario_principal" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/descripcionImagenes"
+        android:onClick="irAmorometros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:srcCompat="@drawable/icono_menu_amorometros" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:srcCompat="@drawable/s_icono_menu_calendario" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/descripcionImagenes"
+        android:onClick="irConsejos"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:srcCompat="@drawable/icono_menu_consejos" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:srcCompat="@drawable/icono_menu_dinamicas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

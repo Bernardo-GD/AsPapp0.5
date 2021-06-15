@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroP2">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="184dp"
+        android:layout_height="119dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sol_registro" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/bienvenido_r1_r2" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/cuantos_hijos" />
+
+    <Spinner
+        android:id="@+id/spinnerHijos"
+        android:layout_width="141dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        android:popupBackground="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="307dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/nombre_cada_hijo" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="324dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/textoImagen1"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:contentDescription="@string/descripcionImagenes"
+                app:srcCompat="@drawable/nombre_por_favor" />
+
+            <EditText
+                android:id="@+id/edNombre1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/ing_nombre"
+                android:inputType="textPersonName"
+                android:text="@string/vacio"
+                android:textColor="#000000"
+                android:textColorHint="#333030"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/textoImagen2"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:contentDescription="@string/descripcionImagenes"
+                app:srcCompat="@drawable/nombre_por_favor" />
+
+            <EditText
+                android:id="@+id/edNombre2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/ing_nombre"
+                android:inputType="textPersonName"
+                android:text="@string/vacio"
+                android:textColor="#000000"
+                android:textColorHint="#333030"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/textoImagen3"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:contentDescription="@string/descripcionImagenes"
+                app:srcCompat="@drawable/nombre_por_favor" />
+
+            <EditText
+                android:id="@+id/edNombre3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/ing_nombre"
+                android:inputType="textPersonName"
+                android:text="@string/vacio"
+                android:textColor="#000000"
+                android:textColorHint="#333030"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/textoImagen4"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:contentDescription="@string/descripcionImagenes"
+                app:srcCompat="@drawable/nombre_por_favor" />
+
+            <EditText
+                android:id="@+id/edNombre4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/ing_nombre"
+                android:inputType="textPersonName"
+                android:text="@string/vacio"
+                android:textColor="#000000"
+                android:textColorHint="#333030"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/textoImagen5"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:contentDescription="@string/descripcionImagenes"
+                app:srcCompat="@drawable/nombre_por_favor" />
+
+            <EditText
+                android:id="@+id/edNombre5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/ing_nombre"
+                android:inputType="textPersonName"
+                android:text="@string/vacio"
+                android:textColor="#000000"
+                android:textColorHint="#333030"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/descripcionImagenes"
+        android:onClick="firstAmorometros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/btn_finalizar_rojo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

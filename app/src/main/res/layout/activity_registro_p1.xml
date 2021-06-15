@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RegistroP1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="119dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sol_registro" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/bienvenido_r1_r2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/usted_es" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="158dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+        <RadioButton
+            android:id="@+id/rb_padre"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:onClick="inHabilitarCampoOtros" />
+
+        <RadioButton
+            android:id="@+id/rb_madre"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:onClick="inHabilitarCampoOtros" />
+
+        <RadioButton
+            android:id="@+id/rb_otro"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:onClick="habilitarCampoOtros"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="127dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/descripcionImagenes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/tutor" />
+
+    <EditText
+        android:id="@+id/ed_campoOtro"
+        android:layout_width="329dp"
+        android:layout_height="59dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/otro"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:textColorHint="#333030"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="324dp"
+        android:layout_height="35dp"
+        android:contentDescription="@string/vacio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_campoOtro"
+        app:srcCompat="@drawable/nombre_por_favor" />
+
+    <EditText
+        android:id="@+id/ed_nombre"
+        android:layout_width="324dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ing_nombre"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#333030"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="168dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/vacio"
+        android:onClick="irRegistro2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn_sig_rojo" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/vacio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_nombre"
+        app:srcCompat="@drawable/fecha_por_favor" />
+
+    <Spinner
+        android:id="@+id/spinnerDias"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:background="#E3E0E0"
+        android:backgroundTint="#FFFFFF"
+        android:popupBackground="#FFFFFF"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Spinner
+        android:id="@+id/spinnerMeses"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:popupBackground="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerYears"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDias"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Spinner
+        android:id="@+id/spinnerYears"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:popupBackground="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

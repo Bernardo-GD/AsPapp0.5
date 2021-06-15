@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AsPapp</string>
+    <string name="Logo">logo</string>
+
+    <!-- Registro 1 -->
+    <string name="vacio"></string>
+    <string name="otro">Especifíque por favor</string>
+    <string name="ing_nombre">Nombre</string>
+
+    <string name="descripcionImagenes">DesIMG</string>
+
+    <string name="Buenas">Buenos días :</string>
+</resources>
