@@ -10,4 +10,12 @@
     <string name="descripcionImagenes">DesIMG</string>
 
     <string name="Buenas">Buenos días :</string>
+
+    
+    <string name="ProbandoTexto">Aqui van a ir las actividades</string>
+    <!--Estas son etiquetas de Actividad calendario-->
+    <string name="nombreActividad">Nombre de la actividad</string>
+    <string name="ingreseNombreA">Nombre</string>
+    <string name="horaInicio">Hora inicio: </string>
+    <string name="horaFin">Hora fin: </string>
 </resources>

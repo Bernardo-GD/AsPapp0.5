@@ -44,10 +44,9 @@ public class CalendarioPrincipal extends AppCompatActivity {
 
     public void irActividad (View view){
 
-        Intent irRegistrarActividad = new Intent();
-
+        Intent irRegistrarActividad = new Intent(this, CalendarioActividad.class);
         irRegistrarActividad.putExtra("fechaRegistro", fecha);
-
+        startActivity(irRegistrarActividad);
     }
 
     public void irAmorometros (View view){
