@@ -34,7 +34,7 @@ public class CalendarioPrincipal extends AppCompatActivity {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
 
-                fecha = dayOfMonth + "/" + month + "/" + year;
+                fecha = dayOfMonth + "/" + (month+1) + "/" + year;
                 Toast.makeText(CalendarioPrincipal.this, fecha, Toast.LENGTH_LONG).show();
 
             }
