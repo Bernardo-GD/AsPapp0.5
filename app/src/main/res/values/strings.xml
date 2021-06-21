@@ -11,11 +11,13 @@
 
     <string name="Buenas">Buenos días :</string>
 
-    
+
     <string name="ProbandoTexto">Aqui van a ir las actividades</string>
     <!--Estas son etiquetas de Actividad calendario-->
     <string name="nombreActividad">Nombre de la actividad</string>
     <string name="ingreseNombreA">Nombre</string>
     <string name="horaInicio">Hora inicio: </string>
     <string name="horaFin">Hora fin: </string>
+    <string name="participantes">Participantes</string>
+    <string name="descripcionAct">Descripción de la actividad</string>
 </resources>
