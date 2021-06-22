@@ -21,4 +21,12 @@
     <string name="participantes">Participantes</string>
     <string name="descripcionAct">Descripción de la actividad</string>
     <string name="chePrueba">Probando</string>
+
+    <!--Estas son etiquetas de Amorometro individual-->
+    <string name="criterio1">Actividades realizadas</string>
+    <string name="criterio2">Actividades no realizadas</string>
+    <string name="criterio3">Aciertos en dinámicas</string>
+    <string name="criterio4">Fallos en dinámicas</string>
+    <string name="criterio5">Dinámicas jugadas</string>
+    <string name="valorInicial">0</string>
 </resources>
