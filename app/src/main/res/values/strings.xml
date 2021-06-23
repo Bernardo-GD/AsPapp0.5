@@ -22,6 +22,10 @@
     <string name="descripcionAct">Descripción de la actividad</string>
     <string name="chePrueba">Probando</string>
 
+    <!--Estas son etiquetas de Amorometro principal-->
+    <string name="nombreEjemplo">nombre del usuario 1</string>
+
+
     <!--Estas son etiquetas de Amorometro individual-->
     <string name="criterio1">Actividades realizadas</string>
     <string name="criterio2">Actividades no realizadas</string>
