@@ -109,7 +109,7 @@
                     <TextView
                         android:id="@+id/textView9"
                         android:layout_width="80dp"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:text="@string/etiquetaVacia"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp" />
@@ -117,7 +117,7 @@
                     <TextView
                         android:id="@+id/txtNombre1"
                         android:layout_width="270dp"
-                        android:layout_height="20dp"
+                        android:layout_height="28dp"
                         android:text="@string/nombreEjemplo"
                         android:textColor="#000000"
                         android:textSize="18sp" />
@@ -133,6 +133,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:contentDescription="@string/descripcionImagenes"
+                        android:onClick="irAmorometroIndividual1"
                         app:srcCompat="@drawable/corazon_barra" />
 
                     <ProgressBar
@@ -150,14 +151,14 @@
                     <TextView
                         android:id="@+id/textView"
                         android:layout_width="80dp"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:text="@string/etiquetaVacia"
                         android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/txtPorcentaje"
                         android:layout_width="80dp"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:text="@string/porcentajeInicial"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -202,7 +203,7 @@
                     <TextView
                         android:id="@+id/textView23"
                         android:layout_width="80dp"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:text="@string/etiquetaVacia"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp" />
@@ -210,7 +211,7 @@
                     <TextView
                         android:id="@+id/txtNombre2"
                         android:layout_width="270dp"
-                        android:layout_height="20dp"
+                        android:layout_height="28dp"
                         android:text="@string/nombreEjemplo1"
                         android:textColor="#000000"
                         android:textSize="18sp" />
@@ -243,7 +244,7 @@
                     <TextView
                         android:id="@+id/textView25"
                         android:layout_width="80dp"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:text="@string/etiquetaVacia"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp" />
@@ -251,7 +252,7 @@
                     <TextView
                         android:id="@+id/textView26"
                         android:layout_width="270dp"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:text="@string/porcentajeInicial"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -272,6 +273,97 @@
 
                     <TextView
                         android:id="@+id/textView27"
+                        android:layout_width="270dp"
+                        android:layout_height="10dp"
+                        android:text="@string/etiquetaVacia"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/grupo3"
+                android:layout_width="350dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp">
+
+                <TableRow
+                    android:id="@+id/fila3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:text="@string/etiquetaVacia"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtNombre3"
+                        android:layout_width="270dp"
+                        android:layout_height="28dp"
+                        android:text="@string/nombreEjemplo2"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fila3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/cora3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/descripcionImagenes"
+                        app:srcCompat="@drawable/corazon_barra" />
+
+                    <ProgressBar
+                        android:id="@+id/progress3"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="270dp"
+                        android:layout_height="80dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fila3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:text="@string/etiquetaVacia"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="270dp"
+                        android:layout_height="25dp"
+                        android:text="@string/porcentajeInicial"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fila3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="80dp"
+                        android:layout_height="10dp"
+                        android:text="@string/etiquetaVacia"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView36"
                         android:layout_width="270dp"
                         android:layout_height="10dp"
                         android:text="@string/etiquetaVacia"
