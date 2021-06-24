@@ -2,9 +2,11 @@ package com.pachoncito.aspapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
 
 public class AmorometroIndividual extends AppCompatActivity {
 
@@ -22,4 +24,12 @@ public class AmorometroIndividual extends AppCompatActivity {
         getSupportActionBar().setTitle("Amorometro individual");
 
     }
+
+    public void regresarAmorometros(View view){
+
+        Intent regresar = new Intent(this, AmorometrosPrincipal.class);
+        startActivity(regresar);
+
+    }
+
 }

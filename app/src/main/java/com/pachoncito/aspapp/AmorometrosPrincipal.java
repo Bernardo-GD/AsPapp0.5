@@ -10,6 +10,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
@@ -19,6 +20,8 @@ import java.util.IllegalFormatCodePointException;
 public class AmorometrosPrincipal extends AppCompatActivity {
 
     private ImageView imagenHora;
+    private Intent amorometroIndividual;
+    private TextView nombre1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +69,9 @@ public class AmorometrosPrincipal extends AppCompatActivity {
         }
         */
 
+        //extraer los nombres de las etiquetas
+        nombre1 = (TextView)findViewById(R.id.txtNombre1);
+
     }
 
     public void irCalendario (View view){
@@ -79,6 +85,13 @@ public class AmorometrosPrincipal extends AppCompatActivity {
         Intent consejos = new Intent(this, ConsejosPrincipal.class);
         startActivity(consejos);
 
+    }
+
+    public void irAmorometroIndividual1 (View view){
+        String n1 = nombre1.getText().toString();
+        amorometroIndividual = new Intent (this, AmorometroIndividual.class);
+        amorometroIndividual.putExtra("n1", n1);
+        startActivity(amorometroIndividual);
     }
 
 }

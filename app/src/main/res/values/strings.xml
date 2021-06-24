@@ -23,7 +23,15 @@
     <string name="chePrueba">Probando</string>
 
     <!--Estas son etiquetas de Amorometro principal-->
-    <string name="nombreEjemplo">nombre del usuario 1</string>
+    <string name="nombreEjemplo">nombre hijo 1</string>
+    <string name="nombreEjemplo1">nombre hijo 2</string>
+    <string name="nombreEjemplo2">nombre hijo 3</string>
+    <string name="nombreEjemplo3">nombre hijo 4</string>
+    <string name="nombreEjemplo4">nombre hijo 5</string>
+
+    <string name="porcentajeInicial">0%</string>
+
+    <string name="etiquetaVacia"></string>
 
 
     <!--Estas son etiquetas de Amorometro individual-->

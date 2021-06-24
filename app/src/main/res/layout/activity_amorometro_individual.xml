@@ -83,6 +83,7 @@
         android:layout_height="60dp"
         android:layout_marginBottom="320dp"
         android:contentDescription="@string/descripcionImagenes"
+        android:onClick="regresarAmorometros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
