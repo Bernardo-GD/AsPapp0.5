@@ -21,7 +21,7 @@ public class AmorometrosPrincipal extends AppCompatActivity {
 
     private ImageView imagenHora;
     private Intent amorometroIndividual;
-    private TextView nombre1;
+    private TextView nombre1, nombre2, nombre3, nombre4, nombre5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +71,11 @@ public class AmorometrosPrincipal extends AppCompatActivity {
 
         //extraer los nombres de las etiquetas
         nombre1 = (TextView)findViewById(R.id.txtNombre1);
+        nombre2 = (TextView)findViewById(R.id.txtNombre2);
+        nombre3 = (TextView)findViewById(R.id.txtNombre3);
+        nombre4 = (TextView)findViewById(R.id.txtNombre4);
+        nombre5 = (TextView)findViewById(R.id.txtNombre5);
+
 
     }
 
@@ -90,7 +95,32 @@ public class AmorometrosPrincipal extends AppCompatActivity {
     public void irAmorometroIndividual1 (View view){
         String n1 = nombre1.getText().toString();
         amorometroIndividual = new Intent (this, AmorometroIndividual.class);
-        amorometroIndividual.putExtra("n1", n1);
+        amorometroIndividual.putExtra("n", n1);
+        startActivity(amorometroIndividual);
+    }
+
+    public void irAmorometroIndividual2 (View view){
+        String n2 = nombre2.getText().toString();
+        amorometroIndividual = new Intent (this, AmorometroIndividual.class);
+        amorometroIndividual.putExtra("n", n2);
+        startActivity(amorometroIndividual);
+    }
+    public void irAmorometroIndividual3 (View view){
+        String n3 = nombre3.getText().toString();
+        amorometroIndividual = new Intent (this, AmorometroIndividual.class);
+        amorometroIndividual.putExtra("n", n3);
+        startActivity(amorometroIndividual);
+    }
+    public void irAmorometroIndividual4 (View view){
+        String n4 = nombre4.getText().toString();
+        amorometroIndividual = new Intent (this, AmorometroIndividual.class);
+        amorometroIndividual.putExtra("n", n4);
+        startActivity(amorometroIndividual);
+    }
+    public void irAmorometroIndividual5 (View view){
+        String n5 = nombre5.getText().toString();
+        amorometroIndividual = new Intent (this, AmorometroIndividual.class);
+        amorometroIndividual.putExtra("n", n5);
         startActivity(amorometroIndividual);
     }
 

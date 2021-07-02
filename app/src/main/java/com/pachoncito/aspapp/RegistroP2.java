@@ -21,7 +21,7 @@ public class RegistroP2 extends AppCompatActivity {
     private ImageView texto1, texto2, texto3, texto4, texto5;
     private int cantidadHijos;
     private boolean retornarNombresCorrectos = false;
-
+    //datos del activity anterior
     private String nombreUsuario, tipoUsuario, diaUsuario, mesUsuario, yearUsuario;
 
     @Override

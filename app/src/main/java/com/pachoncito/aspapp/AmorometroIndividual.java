@@ -7,8 +7,11 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class AmorometroIndividual extends AppCompatActivity {
+
+    private String nombreHijo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,10 @@ public class AmorometroIndividual extends AppCompatActivity {
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
         //quitar actionbar
         getSupportActionBar().setTitle("Amorometro individual");
+
+        //con este nombre podre hacer la consulta a la base de datos sin importa que hijo sea
+        nombreHijo = getIntent().getStringExtra("n");
+        Toast.makeText(this, nombreHijo, Toast.LENGTH_LONG).show();
 
     }
 
