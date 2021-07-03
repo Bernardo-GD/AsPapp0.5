@@ -37,4 +37,44 @@ public class ConsejosPrincipal extends AppCompatActivity {
         startActivity(calendario);
 
     }
+
+    public void irCategoria1 (View view){
+
+        Intent c1 = new Intent(this, ConsejosCategoria.class);
+        c1.putExtra("Titulo", "Motivación");
+        startActivity(c1);
+
+    }
+
+    public void irCategoria2 (View view){
+
+        Intent c2 = new Intent(this, ConsejosCategoria.class);
+        c2.putExtra("Titulo", "Hábitos");
+        startActivity(c2);
+
+    }
+
+    public void irCategoria3 (View view){
+
+        Intent c3 = new Intent(this, ConsejosCategoria.class);
+        c3.putExtra("Titulo", "Actividades");
+        startActivity(c3);
+
+    }
+
+    public void irCategoria4 (View view){
+
+        Intent c4 = new Intent(this, ConsejosCategoria.class);
+        c4.putExtra("Titulo", "Actitudes");
+        startActivity(c4);
+
+    }
+
+    public void irCategoria5 (View view){
+
+        Intent c5 = new Intent(this, ConsejosCategoria.class);
+        c5.putExtra("Titulo", "Habilidades");
+        startActivity(c5);
+
+    }
 }

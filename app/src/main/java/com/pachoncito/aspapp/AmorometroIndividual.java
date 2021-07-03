@@ -19,12 +19,14 @@ public class AmorometroIndividual extends AppCompatActivity {
         setContentView(R.layout.activity_amorometro_individual);
 
         //cambiar el color dde la barra donde está la hora, notificaciones, etc
-        getWindow().setStatusBarColor(Color.parseColor("#01AAFF"));
+        getWindow().setStatusBarColor(Color.parseColor("#741A8A"));
 
         //cambiar fondo a blanco
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
+
+        getSupportActionBar().hide();
         //quitar actionbar
-        getSupportActionBar().setTitle("Amorometro individual");
+        //getSupportActionBar().setTitle("Amorometro individual");
 
         //con este nombre podre hacer la consulta a la base de datos sin importa que hijo sea
         nombreHijo = getIntent().getStringExtra("n");

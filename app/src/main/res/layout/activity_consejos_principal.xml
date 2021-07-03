@@ -55,4 +55,64 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
         app:srcCompat="@drawable/icono_menu_dinamicas" />
 
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/descripcionImagenes"
+        android:onClick="irCategoria1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29"
+        app:srcCompat="@drawable/consejo1" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/descripcionImagenes"
+        android:onClick="irCategoria2"
+        app:layout_constraintStart_toEndOf="@+id/imageView35"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29"
+        app:srcCompat="@drawable/consejo2" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="68dp"
+        android:contentDescription="@string/descripcionImagenes"
+        android:onClick="irCategoria3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35"
+        app:srcCompat="@drawable/consejo3" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/descripcionImagenes"
+        android:onClick="irCategoria4"
+        app:layout_constraintStart_toEndOf="@+id/imageView37"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36"
+        app:srcCompat="@drawable/consejo4" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/descripcionImagenes"
+        android:onClick="irCategoria5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView38"
+        app:srcCompat="@drawable/consejo5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
