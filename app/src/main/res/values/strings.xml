@@ -41,4 +41,8 @@
     <string name="criterio4">Fallos en dinámicas</string>
     <string name="criterio5">Dinámicas jugadas</string>
     <string name="valorInicial">0</string>
+
+    <!--Estas son etiquetas de consejosCategoria-->
+    <string name="PruebaConsejos">Nombre Consejo</string>
+
 </resources>
