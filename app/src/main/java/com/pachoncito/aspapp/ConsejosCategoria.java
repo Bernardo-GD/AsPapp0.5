@@ -18,11 +18,15 @@ public class ConsejosCategoria extends AppCompatActivity {
 
         //cambiar fondo a blanco
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
+
+
+
         //quitar actionbar
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
 
         String tituloCategoria = getIntent().getStringExtra("Titulo");
-
+        getSupportActionBar().setTitle("Consejos - " + tituloCategoria);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#F6C801")));
         switch (tituloCategoria){
 
             case "Motivación":
