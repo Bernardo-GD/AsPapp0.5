@@ -2,7 +2,9 @@ package com.pachoncito.aspapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -165,7 +167,6 @@ public class RegistroP2 extends AppCompatActivity {
         mesUsuario = getIntent().getStringExtra("mesFU");
         yearUsuario = getIntent().getStringExtra("yearFU");
 
-        Toast.makeText(this, nombreUsuario + " " + tipoUsuario + " " + yearUsuario , Toast.LENGTH_LONG).show();
 
 
     }
@@ -176,17 +177,43 @@ public class RegistroP2 extends AppCompatActivity {
         boolean datosCorrectos = nombresCorrectos();
 
         if (datosCorrectos){
-            Intent irAmorometrosFirst = new Intent(this, AmorometrosPrincipal.class);
             String n1, n2, n3, n4, n5;
-            //APBD helperObjeto = new APBD(this, "BD_AsPapp", null, 1);
-            //SQLiteDatabase BD = helperObjeto.getWritableDatabase();
+            Intent irAmorometrosFirst = new Intent(this, AmorometrosPrincipal.class);
 
-            //ContentValues registro = new ContentValues();
+            APBD helperObjeto1 = new APBD(this, "BD_AsPapp1", null, 1);
+            SQLiteDatabase BD1 = helperObjeto1.getWritableDatabase();
+
+            APBD helperObjeto2 = new APBD(this, "BD_AsPapp1", null, 1);
+            SQLiteDatabase BD2 = helperObjeto2.getWritableDatabase();
+
+            //primera inserción a la base dedatos: tipo, personas, datos/preguntas
+
+            //objeto para progenitores
+            ContentValues registro1 = new ContentValues();
+
+            //objeto para hijos/as
+            ContentValues registro2 = new ContentValues();
 
             switch (Integer.parseInt(listaHijos.getSelectedItem().toString())){
 
                 case 1:
                     n1 = nombre1.getText().toString();
+
+                    //registrando papa
+                    registro1.put("nombre", nombreUsuario);
+                    registro1.put("tipo", tipoUsuario);
+
+                    BD1.insert("Persona", null, registro1);
+                    BD1.close();
+
+                    registro2.put("nombre", n1);
+                    registro2.put("tipo", "hijo");
+                    BD2.insert("Persona", null, registro2);
+
+
+                    BD2.close();
+                    Toast.makeText(this, "Registro exitoso", Toast.LENGTH_LONG).show();
+
                     break;
 
                 case 2:

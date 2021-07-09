@@ -102,8 +102,7 @@ public class RegistroP1 extends AppCompatActivity {
             BD.insert("Persona", null, registro);
             BD.close();
             */
-            //envio al siguiente activity el nombre del usuario
-            irARegistro2.putExtra("nombreUsuario", nombre.getText().toString());
+
 
             String tipo = "";
             if  (madre.isChecked()){
@@ -117,6 +116,8 @@ public class RegistroP1 extends AppCompatActivity {
                     }
                 }
             }
+            //envio al siguiente activity el nombre del usuario
+            irARegistro2.putExtra("nombreUsuario", nombre.getText().toString());
             //envio el tipo de usuario al siguiente activity
             irARegistro2.putExtra("tipoUsuario", tipo);
             //envio la fecha por partes al siguiente activity

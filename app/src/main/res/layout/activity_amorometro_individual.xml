@@ -11,7 +11,7 @@
         android:layout_width="280dp"
         android:layout_height="28dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="150dp"
         android:text="@string/criterio1"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -49,7 +49,7 @@
         android:layout_width="20dp"
         android:layout_height="28dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="150dp"
         android:text="@string/valorInicial"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -135,10 +135,10 @@
         android:id="@+id/imageView15"
         android:layout_width="168dp"
         android:layout_height="66dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         android:contentDescription="@string/descripcionImagenes"
         android:onClick="regresarAmorometros"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:srcCompat="@drawable/regresar_amorometros_principal" />
@@ -152,5 +152,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/amorometro_ind_barra" />
+
+    <TextView
+        android:id="@+id/txtNombreHijo"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nombreEjemplo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

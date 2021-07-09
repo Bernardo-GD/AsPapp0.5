@@ -30,14 +30,15 @@
         app:srcCompat="@drawable/dias" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/txt_Usuario"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="@string/Buenas"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView25" />
 
@@ -99,7 +100,8 @@
                 android:layout_width="350dp"
                 android:layout_height="153dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:visibility="invisible">
 
                 <TableRow
                     android:id="@+id/fila1_1"
@@ -137,7 +139,7 @@
                         app:srcCompat="@drawable/corazon_barra" />
 
                     <ProgressBar
-                        android:id="@+id/progress1"
+                        android:id="@+id/progreso1"
                         style="?android:attr/progressBarStyleHorizontal"
                         android:layout_width="270dp"
                         android:layout_height="80dp" />
@@ -193,7 +195,8 @@
                 android:id="@+id/grupo2"
                 android:layout_width="350dp"
                 android:layout_height="153dp"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:visibility="invisible">
 
                 <TableRow
                     android:id="@+id/fila2_1"
@@ -287,7 +290,8 @@
                 android:id="@+id/grupo3"
                 android:layout_width="350dp"
                 android:layout_height="153dp"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:visibility="invisible">
 
                 <TableRow
                     android:id="@+id/fila3_1"
@@ -381,7 +385,8 @@
                 android:id="@+id/grupo4"
                 android:layout_width="350dp"
                 android:layout_height="153dp"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:visibility="invisible">
 
                 <TableRow
                     android:id="@+id/fila4_1"
@@ -470,7 +475,8 @@
             <TableLayout
                 android:id="@+id/grupo5"
                 android:layout_width="350dp"
-                android:layout_height="153dp">
+                android:layout_height="153dp"
+                android:visibility="invisible">
 
                 <TableRow
                     android:id="@+id/fila5_1"

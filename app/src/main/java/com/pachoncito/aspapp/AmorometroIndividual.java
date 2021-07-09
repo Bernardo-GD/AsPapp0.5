@@ -7,11 +7,13 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AmorometroIndividual extends AppCompatActivity {
 
     private String nombreHijo;
+    private TextView hijo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +32,9 @@ public class AmorometroIndividual extends AppCompatActivity {
 
         //con este nombre podre hacer la consulta a la base de datos sin importa que hijo sea
         nombreHijo = getIntent().getStringExtra("n");
-        Toast.makeText(this, nombreHijo, Toast.LENGTH_LONG).show();
+        hijo = (TextView)findViewById(R.id.txtNombreHijo);
+        hijo.setText(nombreHijo);
+
 
     }
 

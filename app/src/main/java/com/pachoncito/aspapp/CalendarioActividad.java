@@ -2,10 +2,16 @@ package com.pachoncito.aspapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -13,6 +19,7 @@ public class CalendarioActividad extends AppCompatActivity {
 
     private String fechaRecibida;
     private Spinner horaInicio, horaFin, api, apf;
+    private CheckBox checkHijo1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +60,35 @@ public class CalendarioActividad extends AppCompatActivity {
         horaFin.setAdapter(adaptadorHora);
         api.setAdapter(adaptadorAP);
         apf.setAdapter(adaptadorAP);
+
+        checkHijo1 = (CheckBox)findViewById(R.id.checkHijo1);
+
+        APBD helperObjeto = new APBD(this, "BD_AsPapp1", null, 1);
+        SQLiteDatabase BD = helperObjeto.getWritableDatabase();
+        @SuppressLint("Recycle") Cursor fila = BD.rawQuery("SELECT nombre FROM Persona", null);
+        String nombres[] = new String[6];
+        int it = 0;
+        if (fila.moveToFirst()){
+
+            do{
+                nombres[it] = fila.getString(0);
+                it++;
+            }while(fila.moveToNext());
+
+        }
+        //Toast.makeText(this, nombres[0] + "-" + nombres[1], Toast.LENGTH_LONG).show();
+        checkHijo1.setText(nombres[1]);
+        checkHijo1.setVisibility(View.VISIBLE);
+        BD.close();
+
+
+    }
+
+
+    public void regresar(View view){
+
+        Intent regresarC = new Intent(this, CalendarioPrincipal.class);
+        startActivity(regresarC);
 
     }
 }
