@@ -45,4 +45,12 @@
     <!--Estas son etiquetas de consejosCategoria-->
     <string name="PruebaConsejos">Nombre Consejo</string>
 
+    <!--Nombres categoria 1-->
+    <string name="tema1">Legado</string>
+    <string name="tema2">Amigos</string>
+    <string name="tema3">Corazón</string>
+    <string name="tema4">Alguien</string>
+    <string name="tema5">Siempre</string>
+
+
 </resources>

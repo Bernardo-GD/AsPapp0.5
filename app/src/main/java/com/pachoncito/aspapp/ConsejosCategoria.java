@@ -79,4 +79,46 @@ public class ConsejosCategoria extends AppCompatActivity {
         startActivity(irConsejo);
     }
 
+    public void irConsejo2 (View view){
+
+        Intent irConsejo = new Intent(this, ConsejoIndividual.class);
+        nombreConsejo = consejo2.getText().toString();
+        irConsejo.putExtra("nCategoria", tituloCategoria);
+        irConsejo.putExtra("conse1", nombreConsejo);
+        startActivity(irConsejo);
+    }
+
+    public void irConsejo3 (View view){
+
+        Intent irConsejo = new Intent(this, ConsejoIndividual.class);
+        nombreConsejo = consejo3.getText().toString();
+        irConsejo.putExtra("nCategoria", tituloCategoria);
+        irConsejo.putExtra("conse1", nombreConsejo);
+        startActivity(irConsejo);
+    }
+
+    public void irConsejo4 (View view){
+
+        Intent irConsejo = new Intent(this, ConsejoIndividual.class);
+        nombreConsejo = consejo4.getText().toString();
+        irConsejo.putExtra("nCategoria", tituloCategoria);
+        irConsejo.putExtra("conse1", nombreConsejo);
+        startActivity(irConsejo);
+    }
+
+    public void irConsejo5 (View view){
+
+        Intent irConsejo = new Intent(this, ConsejoIndividual.class);
+        nombreConsejo = consejo5.getText().toString();
+        irConsejo.putExtra("nCategoria", tituloCategoria);
+        irConsejo.putExtra("conse1", nombreConsejo);
+        startActivity(irConsejo);
+    }
+
+    public void regresarConsejosPrincipal(View view){
+
+        Intent regresarPrincipal = new Intent(this, ConsejosPrincipal.class);
+        startActivity(regresarPrincipal);
+    }
+
 }
